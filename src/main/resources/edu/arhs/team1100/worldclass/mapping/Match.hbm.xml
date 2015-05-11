@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="edu.arhs.team1100.worldclass.objects">
+    <class name="Match" table="Matches">
+        <composite-id>
+            <key-property name="teamNumber"/>
+            <key-property name="matchNumber"/>
+            <key-property name="matchType"/>
+            <key-property name="table" column="tableNumber" />
+        </composite-id>
+        <property name="basketInBase"/>          
+        <property name="identicalPlusInBase"/>   
+        <property name="doorOpen"/>    
+        <property name="loopsOnScale"/>
+        <property name="peopleAndModel"/>   
+        <property name="modelInCirlce"/>    
+        <property name="colorWheelSpun"/>   
+        <property name="correctColorRemoved"/>   
+        <property name="ballShot"/>    
+        <property name="ballTouchingMat"/>   
+        <property name="insertInstalled"/>   
+        <property name="robotNotTouchingModel"/> 
+        <property name="rightSensesNotTouchModel"/> 
+        <property name="sliderMoved"/>    
+        <property name="ideaModelNotTouching"/>   
+        <property name="bulbFacingUp"/>    
+        <property name="communityNotTouchingModel"/>
+        <property name="SDCardUp"/>
+        <property name="rotatedNinetyDegrees"/>
+        <property name="penalties"/>
+        <property name="yHandleMoved"/>
+        <property name="scaleReading"/>
+        <property name="score"/>
+        <property name="saved"/>
+    </class>
+</hibernate-mapping>
